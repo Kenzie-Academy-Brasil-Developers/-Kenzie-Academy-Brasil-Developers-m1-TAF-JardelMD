@@ -23,6 +23,28 @@ let passed = false;
 */
 // **sua lógica a partir daqui**
 
+// !!!!!!      MEU CÓDIGO A PARTIR DAQUI      !!!!!!
+if (gender === "male" && height >= 1.70) {  // Se o candidado for do gênero masculino E Altura mínima de 1,70 metros;
+    if (barReps >= 6 || barSeconds >= 15) {  //Pelo menos 6 repetições na barra ou duração mínima de 15 segundos;
+        if (abs >= 41) {                      //Pelo menos 41 abdominais;
+            if (runDistance >= 3000 && runTime <= 720 || runDistance >= 5000 && runTime <= 1200) { //Pelo menos 3km em no máximo 12 minutos de corrida ou pelo menos 5km em no máximo 20 minutos de corrida;
+                if (swimDistance >= 100 && swimTime <= 60 || diveTime <= 30) { //Pelo menos 100 metros em no máximo 1 minuto de natação ou no máximo 30 segundos de mergulho;
+                    passed = true; //Se o candidato do gênero masculino passou no teste, todos os condicionais foram executados.
+                }
+            }
+        }
+    }
+} else if (gender === "female" && height >= 1.60) { // Se o candidato for do gênero é feminino E Altura mínima de 1,60 metros;
+    if (barReps >= 5 || barSeconds >= 12) {    //Pelo menos 5 repetições na barra ou duração mínima de 12 segundos;
+        if (abs >= 41) { // Pelo menos 41 abdominais;
+            if (runDistance >= 4000 && runTime <= 900 || runDistance >= 6000 && runTime <= 1320) { //Pelo menos 4km em no máximo 15 minutos de corrida ou pelo menos 6km em no máximo 22 minutos de corrida;
+                if (swimDistance >= 100 && swimTime <= 60 || diveTime <= 30) { //Pelo menos 100 metros em no máximo 1 minuto de natação ou no máximo 30 segundos de mergulho;
+                    passed = true; //Se o candidato do gênerofeminino passou no teste, todos os condicionais foram executados.
+                }
+            }
+        }
+    }
+}
 
 
 /*
